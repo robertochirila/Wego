@@ -1,0 +1,149 @@
+<template name="yourStats">
+  <div id="mainDiv" class="ui center aligned container">
+  <a href="#"><i id="arrow" class="huge inverted yellow arrow circle down icon"></i></a>
+
+  {{>menu}}
+
+<div class="ui stackable relaxed grid">
+  <div class="row">
+    <div class="six wide column">
+      <img id="userImage" class="ui medium image" src="lion.png">
+    </div>
+    <div class="ten wide column">
+      <div id="healthIndicators" class="ui inverted segment">
+        <h3 class="ui center aligned inverted header">Health Indicators</h3>
+  <div class="ui red inverted indicating progress" data-percent="40" id="dopamineBar">
+    <h4 class="ui inverted header">DOPAMINE Rush</h4>
+    <div class="bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+  <div class="ui orange inverted indicating progress" data-percent="65" id="confidenceBar">
+    <h4 class="ui inverted header">Confidence</h4>
+    <div class="bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+  <div class="ui yellow inverted indicating progress" data-percent="78" id="moraleBar">
+    <h4 class="ui inverted header">Morale</h4>
+    <div class="bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+  <div class="ignored">
+    <button id="helpButton" class="ui inverted green button">Help</button>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+<div class="ui stackable relaxed grid">
+  <div class="row">
+    <div class="six wide column">
+      <div class="ui center aligned container">
+        <h2 id="dopamineHeader" class="ui inverted center aligned header">DOPAMINE Rush</h2>
+      <i id="dopamineIcon" class="huge inverted yellow diamond icon"></i>
+    </div>
+        <p id="dopamineParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="five wide column">
+      <div class="ui center aligned container">
+        <h2 id="confidenceHeader" class="ui inverted center aligned header">Confidence</h2>
+      <i id="confidenceIcon" class="huge inverted red diamond icon"></i>
+    </div>
+        <p id="confidenceParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="five wide column">
+      <div class="ui center aligned container">
+        <h2 id="moraleHeader" class="ui inverted center aligned header">Morale</h2>
+      <i id="moraleIcon" class="huge inverted orange diamond icon"></i>
+    </div>
+        <p id="moraleParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="achievementsSkillsDiv" class="ui container">
+<div id="achievementsSkillsGrid" class="ui stackable relaxed grid">
+  <div class="row">
+    <div class="eight wide column">
+      <div class="ui center aligned container">
+        <h3 id="skillsHeader" class="ui inverted header">Skills</h3>
+        <div id="skillsDiv" class="ui inverted segment">
+    <div class="ui red inverted indicating progress" id="creativityBar">
+      <h4 class="ui inverted header">Creativity</h4>
+      <div class="bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="ui orange inverted indicating progress" id="analyticsBar">
+      <h4 class="ui inverted header">Analytics</h4>
+      <div class="bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="ui yellow inverted indicating progress" id="fitnessBar">
+      <h4 class="ui inverted header">Fitness</h4>
+      <div class="bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="ui olive inverted indicating progress" id="researchBar">
+      <h4 class="ui inverted header">Research</h4>
+      <div class="bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="ui green inverted indicating progress" id="communicationBar">
+      <h4 class="ui inverted header">Communication</h4>
+      <div class="bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="ui teal inverted indicating progress" id="problemSolvingBar">
+      <h4 class="ui inverted header">Problem Solving</h4>
+      <div class="bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="ui blue inverted indicating progress" id="timeManagementBar">
+      <h4 class="ui inverted header">Time Management</h4>
+      <div class="bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="ui violet inverted indicating progress" id="leadershipBar">
+      <h4 class="ui inverted header">Leadership</h4>
+      <div class="bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="ui purple inverted indicating progress" id="selfMotivationBar">
+      <h4 class="ui inverted header">Self-Motivation</h4>
+      <div class="bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="ui pink inverted indicating progress" id="teamworkBar">
+      <h4 class="ui inverted header">Teamwork</h4>
+      <div class="bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="ignored">
+      <button id="skillsButton" class="ui inverted yellow button">Skills</button>
+    </div>
+  </div>
+      </div>
+    </div>
+    <div class="eight wide column">
+      <div class="ui center aligned container">
+        <h3 id="achievementsHeader" class="ui inverted header">Achievements</h3>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</template>

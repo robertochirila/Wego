@@ -1,0 +1,22 @@
+<template name="detailTask">
+  {{>menu}}
+  <div id="detailTaskDiv" class="ui container">
+    <div id="detailTaskSkillsDiv" class="ui stackable grid">
+      <div class="row">
+        <div class="eight wide column">
+          {{#each returnDetailTask}}
+          {{>displaySkills}}
+          {{/each}}
+      </div>
+      <div class="eight wide column">
+      <div class="ui center aligned container">
+        {{#each returnDetailTask}}
+        {{>displayTask}}
+        {{/each}}
+        <p id="skillsParagraph">In this section you are able to see which skills are going to get improved after finishing this task. Each task has its own features and skills will improve accordingly.</p>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</template>

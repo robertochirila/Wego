@@ -1,0 +1,59 @@
+<template name="login">
+
+<div id="container1" class="ui center aligned container">
+  <h1 class="ui blue center aligned header">WeGo</h1>
+  <h3 class="ui red center aligned header">Inventing Productive Socialising</h3>
+  <button id="signUpButton" class="ui red button">Sign Up</button>
+  <button id="loginButton" class="ui teal button">Login</button>
+  <form id="login" class="ui form">
+  <div class="field">
+    <label>Username</label>
+    <input name="username" placeholder="Name" type="text">
+  </div>
+  <div class="field">
+    <label>Password</label>
+    <input name="password" placeholder="Last Name" type="password">
+  </div>
+  <button class="ui blue button" type="submit">Login</button>
+</form>
+
+<form id="signUp" class="ui form ">
+  <p>Tell Us About Yourself</p>
+  <div class="two fields">
+    <div class="field">
+      <label>Name</label>
+      <input placeholder="First Name" name="name" type="text">
+    </div>
+    <div class="field">
+      <label>Gender</label>
+      <select class="ui dropdown" name="gender">
+        <option value="">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+  </div>
+  <div class="two fields">
+    <div class="field">
+      <label>Username</label>
+      <input placeholder="Username" name="username" type="text">
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <input name="password" type="password">
+    </div>
+  </div>
+
+  <div class="inline field">
+    <div class="ui checkbox">
+      <input name="terms" type="checkbox">
+      <label>I agree to the terms and conditions</label>
+    </div>
+  </div>
+  <div class="ui primary submit button">Submit</div>
+  <div class="ui error message"></div>
+</form>
+</div>
+
+
+</template>

@@ -1,0 +1,17 @@
+<template name="yourProfile">
+  <div id="profileDiv">
+  {{>menu}}
+  <div class="ui container">
+    <h1 class="ui center aligned header">Tell us a little bit about yourself.
+      <i class="ui large red user icon"></i>
+    </h1>
+    {{#each returnUserProfileInfo}}
+    {{>userProfileForm}}
+    {{/each}}
+
+    {{#if checkUser}}
+    {{>userProfileForm1}}
+    {{/if}}
+  </div>
+</div>
+</template>

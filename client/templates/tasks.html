@@ -1,0 +1,46 @@
+<template name="tasks">
+  <div id="taskDiv" class="ui container">
+  {{>menu}}
+
+<div class="ui center aligned container">
+  <button id="createTaskButton" class="ui huge red circular icon button">
+    <h3 class="ui inverted teal header">Create Task</h3>
+  <i id="taskIcon" class="ui inverted huge teal add square icon"></i>
+  </button>
+  <form id="createTaskForm" class="ui form">
+  <div class="field">
+    <label>Task Name</label>
+    <input name="taskName" placeholder="Task Name" type="text">
+  </div>
+    <div class="field">
+      <label>Category</label>
+      <input name="category" placeholder="Select a category" type="text">
+    </div>
+  <div class="field">
+    <label>Task Duration</label>
+    <input name="duration" placeholder="0 hours" type="text">
+  </div>
+  <button id="submitTaskButton" class="ui teal button" type="submit">Submit</button>
+</form>
+</div>
+<div id="taskGrid" class="ui stackable grid">
+  <!--<div class="ui divider"></div>
+  <div class="ui divider"></div>-->
+  <div class="row">
+    {{#each returnTask}}
+    {{>displayTask}}
+    {{/each}}
+  </div>
+</div>
+</div>
+
+<!--<div id="taskContainer" class="ui container">
+  <div class="ui stackable grid">
+    <div class="row">
+      {{#each returnTask}}
+      {{>displayTask}}
+      {{/each}}
+    </div>
+  </div>
+</div>-->
+</template>

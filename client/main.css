@@ -1,0 +1,322 @@
+/* CSS declarations go here */
+body{
+  background-color: #ffffff;
+}
+#login{
+  display: none;
+}
+#signUp{
+  display: none;
+}
+#container1{
+  margin-top: 30px;
+}
+#mainPageMenu{
+  background-color: #1a1d35;
+  margin-top:  0px !important;
+}
+#firstRow{
+  background-color: #ffebcc;
+}
+#secondRow{
+  background-color: #ffebcc;
+}
+#helpIcon{
+  margin-left: 100px;
+}
+#infoIcon{
+  margin-left: 100px;
+}
+#createTaskButton{
+  height: 180px;
+  width: 280px;
+}
+#taskIcon{
+
+  height: 50px;
+  width: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+#createTaskForm{
+  display: none;
+}
+#taskContainer{
+  margin-top: 50px;
+}
+#dopamineIcon{
+  display: none;
+}
+#confidenceIcon{
+  display: none;
+}
+#moraleIcon{
+  display: none;
+}
+#dopamineParagraph{
+  display: none;
+  margin-top: 20px;
+  color: #ffddd1;
+}
+#confidenceParagraph{
+  display: none;
+  margin-top: 20px;
+  color: #ffddd1;
+}
+#moraleParagraph{
+  display: none;
+  margin-top: 20px;
+  color: #ffddd1;
+}
+#dopamineHeader{
+  display: none;
+  margin-bottom: 10px;
+}
+#confidenceHeader{
+  display: none;
+  margin-bottom: 10px;
+}
+#moraleHeader{
+  display: none;
+  margin-bottom: 10px;
+}
+#arrow{
+  position: absolute;
+  bottom: 0;
+  transition: all 1.3s;
+  animation:pulse 2s infinite;
+}
+#arrow:hover {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(20deg);
+    transform: scale(1.4);
+  }
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    10%{
+      opacity: 0.1;
+    }
+    20%{
+      opacity: 0.2;
+    }
+    30%{
+      opacity: 0.3;
+    }
+    40%{
+      opacity: 0.4;
+    }
+    50% {
+
+      opacity: 0.5;
+
+    }
+    60%{
+      opacity: 0.6;
+    }
+
+    70% {
+      opacity: 0.7;
+    }
+    80%{
+      opacity: 0.8;
+    }
+    90%{
+      opacity: 0.9;
+    }
+  }
+  #achievementsSkillsGrid{
+    display: none;
+  }
+  #achievementsSkillsDiv{
+
+    background-color: #294168;
+    background-size: cover;
+    min-width: 100%;
+
+
+  }
+
+  .ui .card .content{
+    background-color: #FFFFFF
+  }
+
+  .ui .dimmer .content{
+
+  background-color:#01579B
+
+  }
+
+
+  #startTaskButton{
+
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+  }
+
+
+  #clockDiv{
+
+    /*background-color: #fff2e2;*/
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+  }
+
+  h4.ui.inverted.teal.header:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+h4.ui.inverted.teal.header:hover:after {
+
+  opacity: 1;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+  color: white;
+
+}
+
+/*#createTaskButton:hover{
+
+  transform: rotate3d(1,1,1,45deg);
+
+}*/
+/*h4.ui.teal.header.effect-box:after,
+h4.ui.teal.header.effect-box:before {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+
+}
+
+h4.ui.teal.header.effect-box:before {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  -webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+h4.ui.teal.header.effect-box:after {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+h4.ui.teal.header.effect-box:hover:after,
+h4.ui.teal.header.effect-box:hover:before {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}*/
+
+  #mainDiv{
+
+      background-color: #405a84;
+      background-size: cover;
+      min-height: 100%;
+      min-width: 100%;
+
+  }
+
+  #taskDiv{
+
+      background-color: #405a84;
+      background-size: cover;
+      min-width: 100%;
+      min-height: 100%;
+
+
+  }
+
+
+  #createTaskDiv{
+
+    background-color: #405a84;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+
+  }
+
+  #mainPageDiv{
+
+    /*background-color: #405a84;*/
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+
+  }
+  #detailTaskDiv{
+
+    background-color: #405a84;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+
+
+  }
+
+  #detailTaskSkillsDiv{
+
+  margin-left: 10px;
+
+  }
+
+  #profileDiv{
+
+    background-color: #fff2e2;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+
+  }
+
+  #taskGrid{
+
+    min-width: 100%;
+
+  }
+
+  #skillsParagraph{
+
+   color:white;
+   margin-top: 20px;
+   font-size: 2.5em;
+
+  }
+
+  .ui.card{
+
+    /*border-style: solid;
+    border-width: 1px;*/
+    border-radius: 10px;
+    /*box-shadow: 3px 1px 1px 1px #5b697c;*/
+    margin-top: 20px;
+    margin-left: 80px;
+    /*margin-right: 20px;*/
+    margin-bottom: 20px;
+
+  }

@@ -1,0 +1,44 @@
+<template name="displayTask">
+
+  <div class="four wide column">
+    <div class="ui center aligned container">
+  <div id="taskCard" class="ui card">
+  <div class="ui image">
+    <img src="lion.png">
+  </div>
+  <div class="content">
+    <!--<h1 class="ui inverted header">View In Detail</h1>-->
+    <!--<a class="header"><h3 class="ui red header">{{name}}</h3>
+    </a>
+    <div class="meta">
+      <span class="date">{{createdAt}}</span>
+    </div>
+    <div class="description">
+      {{category}}
+    </div>-->
+    <a href="/detailTask">
+    <div class="massive fluid ui teal button">View In Detail</div>
+  </a>
+    <div class="ui dimmer">
+    <div class="content">
+      <div class="center">
+        <h2 class="ui inverted header">{{name}}</h2>
+        <a href="/detailTask">
+        <div id="viewDetailButton" class="ui inverted red button">View in Detail</div>
+      </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="extra content">
+    <!--<a>
+      <i class="ui red calendar icon"></i>
+      <h5 class="ui header">{{duration}} hours</h5>
+    </a>-->
+    <div id="startTaskButton" class="massive fluid ui blue button">Start Task</div>
+  {{>countdown}}
+  </div>
+</div>
+</div>
+</div>
+</template>
